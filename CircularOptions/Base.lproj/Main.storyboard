@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-YQ-drI" customClass="CircularOptionsView">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="AQr-hA-NRS"/>
+                                    <constraint firstAttribute="height" constant="350" id="uTw-89-byH"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center" translatesAutoresizingMaskIntoConstraints="NO" id="nAu-uf-aH8"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY7-jg-vPQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38o-2j-WzY">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="ZMl-2c-kpl"/>
+                                    <constraint firstAttribute="height" constant="350" id="lk5-SI-dZk"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sH7-Er-R9M" appends="YES" id="2jt-sD-FPV"/>
+                                    <outletCollection property="gestureRecognizers" destination="J7S-gg-Fdv" appends="YES" id="CVk-yK-1BO"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press and Pan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d15-wR-RqA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d15-wR-RqA" firstAttribute="centerX" secondItem="38o-2j-WzY" secondAttribute="centerX" id="4bD-6E-auo"/>
+                            <constraint firstItem="SMe-YQ-drI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Nb-qI-9qu"/>
+                            <constraint firstItem="38o-2j-WzY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Jk-DK-ejC"/>
+                            <constraint firstItem="d15-wR-RqA" firstAttribute="top" secondItem="38o-2j-WzY" secondAttribute="bottom" constant="70" id="9tk-ki-dpi"/>
+                            <constraint firstItem="nY7-jg-vPQ" firstAttribute="centerY" secondItem="nAu-uf-aH8" secondAttribute="centerY" id="BWQ-v8-3Ak"/>
+                            <constraint firstItem="SMe-YQ-drI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XDe-VN-MUt"/>
+                            <constraint firstItem="nY7-jg-vPQ" firstAttribute="centerX" secondItem="nAu-uf-aH8" secondAttribute="centerX" id="ZJn-gm-gXS"/>
+                            <constraint firstItem="nAu-uf-aH8" firstAttribute="height" secondItem="SMe-YQ-drI" secondAttribute="height" multiplier="0.5" id="ZLb-sz-t2y"/>
+                            <constraint firstItem="nAu-uf-aH8" firstAttribute="centerX" secondItem="SMe-YQ-drI" secondAttribute="centerX" id="c5M-HK-h8c"/>
+                            <constraint firstItem="38o-2j-WzY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="keu-v5-JeK"/>
+                            <constraint firstItem="nAu-uf-aH8" firstAttribute="width" secondItem="SMe-YQ-drI" secondAttribute="width" multiplier="0.5" id="lCO-vt-BLj"/>
+                            <constraint firstItem="nAu-uf-aH8" firstAttribute="centerY" secondItem="SMe-YQ-drI" secondAttribute="centerY" id="osB-cw-qDN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gesturesRecoginzerView" destination="38o-2j-WzY" id="Y8D-Ic-GQ0"/>
+                        <outlet property="optionsSelectedlbl" destination="nY7-jg-vPQ" id="6I7-ng-pGF"/>
+                        <outlet property="presetBGLayerView" destination="SMe-YQ-drI" id="bpN-cV-KPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="sH7-Er-R9M">
+                    <connections>
+                        <action selector="LongPress:" destination="BYZ-38-t0r" id="Scr-zS-8d7"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gRU-TI-6gU"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="J7S-gg-Fdv">
+                    <connections>
+                        <action selector="panning:" destination="BYZ-38-t0r" id="l1V-3f-lav"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="0wh-TB-qkw"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="center" width="300" height="300"/>
+    </resources>
+</document>
